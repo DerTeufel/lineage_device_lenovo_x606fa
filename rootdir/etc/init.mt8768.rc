@@ -1,0 +1,33 @@
+import /system/etc/init/hw/init.${ro.hardware}.usb.configfs.rc
+
+service adbd_system /apex/com.android.adbd/bin/adbd --root_seclabel=u:r:su:s0
+    class core
+    socket adbd seqpacket 660 system system
+    disabled
+    updatable
+    seclabel u:r:adbd:s0
+
+service adb_enable /system/bin/adbenable.sh
+    class core
+    user root
+    group root system cache
+    oneshot
+
+# Add logger service
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system cache
+    disabled
+    oneshot
+
+on post-fs-data
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+    start adbd_system
+
+on property:sys.boot_completed=1
+    # Stop the logger service
+    stop adbd_system
+    stop logger
