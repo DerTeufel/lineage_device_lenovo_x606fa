@@ -8,8 +8,6 @@ $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 # somehow hack a working adb #
 PRODUCT_PACKAGES += \
     init.mt8768.rc \
-    adbenable \
-    init.mt8768.usb.configfs.rc
 
 # launch custom apps when docked (instead of dreaming)
 PRODUCT_PACKAGES += \
