@@ -6,6 +6,11 @@ allow init mnt_product_file:dir mounton;
 
 type mtk_hal_audio, domain;
 typeattribute mtk_hal_audio hal_broadcastradio_client;
+allow mtk_hal_audio sysfs_dt_firmware_android:file r_file_perms;
+
+type ccci_mdinit, domain;
+allow ccci_mdinit sysfs_dt_firmware_android:file r_file_perms;
+allow ccci_mdinit init_service_status_private_prop:file read;
 
 type mtk_hal_power, domain;
 allow mtk_hal_power system_data_root_file:file create_file_perms;
@@ -25,3 +30,7 @@ allow { appdomain -isolated_app }  mtk_hal_mms_hwservice:hwservice_manager find;
 
 type tkcore, domain;
 permissive tkcore;
+
+type prop_init, domain;
+allow prop_init system_prop:property_service set;
+#allow prop_init system_prop:file (read getattr map open);
