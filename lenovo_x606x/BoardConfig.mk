@@ -7,7 +7,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 SELINUX_IGNORE_NEVERALLOWS := true
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/lenovo/x606fa/sepolicy
 
-TARGET_SYSTEM_PROP := device/lenovo/x606fa/system.prop $(TARGET_SYSTEM_PROP)
+TARGET_SYSTEM_PROP += device/lenovo/x606fa/system.prop
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lenovo/x606fa/bluetooth/include
