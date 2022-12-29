@@ -2,7 +2,7 @@
 
 This is a device tree to build lineageOs-20 (as GSI) for Lenovo TB-X606XA,TB-X606FA and versions without 'A'
 
-In order to boot, pathces in https://github.com/DerTeufel/lineage_device_lenovo_x606fa/tree/lineage-20.0/patches/system/core need to be applied manually.
+In order to boot, patches in https://github.com/DerTeufel/lineage_device_lenovo_x606fa/tree/lineage-20.0/patches/system/core need to be applied manually.
 
 Since this is actually generating a GSI, it should boot on (m)any device(s), but it is inherenting tablet configs, and may look weird on phones.
 
