@@ -1,0 +1,1 @@
+allow platform_app soundtriggerlenovoservice:service_manager find;

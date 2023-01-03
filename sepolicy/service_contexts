@@ -4,3 +4,5 @@ mtkIms                                    u:object_r:radio_service:s0
 
 # Audio AIDL interface
 android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/sysbta    u:object_r:hal_audio_service:s0
+
+soundtriggerlenovo           u:object_r:soundtriggerlenovoservice:s0
