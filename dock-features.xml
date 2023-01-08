@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!---******************************************************************************
+* @file    dock-features.xml
+* @brief   configuration file for Dock features
+*  *****************************************************************************-->
+
+<features>
+<property name="dock">
+    <feature name="com.amazon.alexa.multimodal.lenovo.target" />
+</property>
+</features>

@@ -7,9 +7,6 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 PRODUCT_CHARACTERISTICS := tablet
 $(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
 
-# Gapps
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-
 # somehow hack a working adb #
 PRODUCT_PACKAGES += \
     init.mt8768.rc \
