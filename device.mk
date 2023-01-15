@@ -1,11 +1,11 @@
 LOCAL_DIR := device/lenovo/x606fa
 
-# Alexa
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-
 # Overwrite the inherited "emulator" characteristics
 PRODUCT_CHARACTERISTICS := tablet
 $(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
+
+# Alexa
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # somehow hack a working adb #
 PRODUCT_PACKAGES += \
