@@ -1,0 +1,17 @@
+service adbd_system /apex/com.android.adbd/bin/adbd --root_seclabel=u:r:su:s0
+    class core
+    socket adbd seqpacket 660 system system
+    override
+    oneshot
+    disabled
+    seclabel u:r:adbd:s0
+
+on post-fs-data
+    start adbd_system
+
+# we only want one adb instance to be running
+on property:sys.boot_completed=1
+    stop adbd_system
+
+on property:init.svc.adbd=running
+    stop adbd_system
