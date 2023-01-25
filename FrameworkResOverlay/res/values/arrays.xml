@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>29</item>
+        <item>29</item>
+        <item>73</item>
+        <item>109</item>
+        <item>219</item>
+        <item>255</item>
+        <item>255</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLevels">
+        <item>10</item>
+        <item>60</item>
+        <item>210</item>
+        <item>350</item>
+        <item>420</item>
+        <item>1000</item>
+    </integer-array>
+    <string-array name="config_globalActionsList">
+        <item>power</item>
+        <item>restart</item>
+        <item>lockdown</item>
+        <item>logout</item>
+        <item>bugreport</item>
+        <item>screenshot</item>
+    </string-array>
+</resources>

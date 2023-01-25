@@ -29,3 +29,7 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
+
+# FrameworkResOverlay (for changing config_voice_capable to true)
+PRODUCT_PACKAGES += \
+    FrameworkResOverlay \

@@ -2,3 +2,4 @@ import /system/etc/init/hw/adb.rc
 
 on fs
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
+    mount none /system/product/overlay/FrameworkResOverlay/FrameworkResOverlay.apk /vendor/overlay/FrameworkResOverlay/FrameworkResOverlay.apk bind
