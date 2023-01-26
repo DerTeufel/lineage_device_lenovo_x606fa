@@ -1,0 +1,3 @@
+allow system_server sysfs_touchscreen:file rw_file_perms;
+allow system_server hal_lineage_touch_hwservice:hwservice_manager find;
+allow system_server hal_lineage_touch_lenovo_x606:binder { call transfer };

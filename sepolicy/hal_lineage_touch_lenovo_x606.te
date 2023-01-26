@@ -1,0 +1,10 @@
+type hal_lineage_touch_lenovo_x606, domain, coredomain;
+hal_server_domain(hal_lineage_touch_lenovo_x606, hal_lineage_touch)
+
+type hal_lineage_touch_lenovo_x606_exec, exec_type, file_type;
+init_daemon_domain(hal_lineage_touch_lenovo_x606)
+
+allow hal_lineage_touch_lenovo_x606 sysfs_touchscreen:file rw_file_perms;
+
+allow hal_lineage_touch_lenovo_x606 hal_lineage_touch_hwservice:hwservice_manager {find add};
+allow hal_lineage_touch_lenovo_x606 hidl_base_hwservice:hwservice_manager add;

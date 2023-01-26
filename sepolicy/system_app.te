@@ -1,0 +1,2 @@
+allow system_app hal_lineage_touch_hwservice:hwservice_manager find;
+allow system_app hal_lineage_touch_lenovo_x606:binder call;

@@ -12,9 +12,6 @@ type ccci_mdinit, domain;
 allow ccci_mdinit sysfs_dt_firmware_android:file r_file_perms;
 allow ccci_mdinit init_service_status_private_prop:file read;
 
-type mtk_hal_power, domain;
-allow mtk_hal_power system_data_root_file:file create_file_perms;
-get_prop(mtk_hal_power,system_prop);
 allow zygote ashmem_device:chr_file execute;
 
 attribute hal_mms_server;

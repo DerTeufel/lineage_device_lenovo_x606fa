@@ -38,3 +38,7 @@ PRODUCT_COPY_FILES += \
 # FrameworkResOverlay (for changing config_voice_capable to true)
 PRODUCT_PACKAGES += \
     FrameworkResOverlay \
+
+# Touch
+PRODUCT_PACKAGES += \
+    lineage.touch@1.0-service.lenovo_x606

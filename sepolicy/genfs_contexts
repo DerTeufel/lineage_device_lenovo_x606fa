@@ -1,0 +1,2 @@
+# Gesture
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0038/fts_glove_mode         u:object_r:sysfs_touchscreen:s0

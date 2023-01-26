@@ -2,3 +2,5 @@
 
 # Configs
 /system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
+
+/system/bin/hw/lineage\.touch@1\.0-service\.lenovo_x606   u:object_r:hal_lineage_touch_lenovo_x606_exec:s0
