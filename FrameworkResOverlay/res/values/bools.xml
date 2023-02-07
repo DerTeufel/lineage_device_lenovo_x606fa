@@ -7,4 +7,5 @@
     <bool name="config_voice_capable">true</bool>
     <bool name="config_wifi_dual_band_support">true</bool>
     <bool name="config_wifi_softap_ieee80211ac_supported">true</bool>
+    <bool name="config_supportDoubleTapWake">true</bool>
 </resources>

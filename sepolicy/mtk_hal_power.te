@@ -1,0 +1,5 @@
+type mtk_hal_power, domain;
+allow mtk_hal_power system_data_root_file:file create_file_perms;
+allow mtk_hal_power sysfs_touchscreen:file w_file_perms;
+
+get_prop(mtk_hal_power,system_prop);

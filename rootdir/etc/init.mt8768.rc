@@ -1,5 +1,10 @@
 import /system/etc/init/hw/adb.rc
 
+on boot
+    # double tap 2 wake
+    chmod 0660 /sys/devices/platform/11007000.i2c0/i2c-0/0-0038/fts_gesture_mode
+    chown system system /sys/devices/platform/11007000.i2c0/i2c-0/0-0038/fts_gesture_mode
+
 on fs
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
     mount none /system/product/overlay/FrameworkResOverlay/FrameworkResOverlay.apk /vendor/overlay/FrameworkResOverlay/FrameworkResOverlay.apk bind
