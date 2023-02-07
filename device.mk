@@ -22,11 +22,6 @@ PRODUCT_PACKAGES += \
     audio.sysbta.default \
     android.hardware.bluetooth.audio-service-system
 
-# TrebleApp, packages/apps/TrebleApp, it is including everything it needs itself
-# privapp-permissions-treble.xml android.hidl.manager-V1.0-java interfaces.xml
-PRODUCT_PACKAGES += \
-    TrebleApp
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_DIR)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
     $(LOCAL_DIR)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
