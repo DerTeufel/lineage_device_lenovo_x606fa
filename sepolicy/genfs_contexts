@@ -1,3 +1,6 @@
 # Gesture and double t2w
 genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0038/fts_gesture_mode       u:object_r:sysfs_touchscreen:s0
 genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0038/fts_glove_mode         u:object_r:sysfs_touchscreen:s0
+
+# ProcFS
+genfscon proc /sys/vm/swappiness                                      u:object_r:proc_swap:s0
