@@ -1,6 +1,14 @@
 # Gesture and double t2w
-genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0038/fts_gesture_mode       u:object_r:sysfs_touchscreen:s0
-genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0038/fts_glove_mode         u:object_r:sysfs_touchscreen:s0
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0038/fts_gesture_mode        u:object_r:sysfs_touchscreen:s0
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-0038/fts_glove_mode          u:object_r:sysfs_touchscreen:s0
 
 # ProcFS
-genfscon proc /sys/vm/swappiness                                      u:object_r:proc_swap:s0
+genfscon proc /sys/vm/swappiness                                                    u:object_r:proc_swap:s0
+
+#genfscon sysfs /power/wakeup_count                                                 u:object_r:sysfs_power:s0
+
+# for offline charging (kpoc_charger)
+genfscon sysfs /devices/platform/charger/BatteryNotify                              u:object_r:sysfs_battery_warning:s0
+genfscon sysfs /devices/platform/mt-battery/BatteryNotify                           u:object_r:sysfs_battery_warning:s0
+genfscon sysfs /devices/platform/charger/ADC_Charger_Voltage                        u:object_r:sysfs_vbus:s0
+genfscon sysfs /devices/platform/battery/ADC_Charger_Voltage                        u:object_r:sysfs_vbus:s0

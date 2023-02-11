@@ -37,3 +37,7 @@ PRODUCT_PACKAGES += \
 # Touch
 PRODUCT_PACKAGES += \
     lineage.touch@1.0-service.lenovo_x606
+
+# offline charging
+PRODUCT_PACKAGES += \
+    kpoc_charger \

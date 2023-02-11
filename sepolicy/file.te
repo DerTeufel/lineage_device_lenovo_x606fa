@@ -1,2 +1,5 @@
 type sysfs_touchscreen, sysfs_type, fs_type;
 type proc_swap, fs_type;
+
+type sysfs_battery_warning, fs_type, sysfs_type;
+type sysfs_vbus, fs_type, sysfs_type;
