@@ -41,3 +41,8 @@ PRODUCT_PACKAGES += \
 # offline charging
 PRODUCT_PACKAGES += \
     kpoc_charger \
+
+# power hal with lineage double tap 2 wake support
+PRODUCT_COPY_FILES += \
+    $(LOCAL_DIR)/android.hardware.power@1.3-impl-mediatek/lib64/hw/android.hardware.power@1.3-impl-mediatek.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/android.hardware.power@1.3-impl-mediatek.so \
+    $(LOCAL_DIR)/android.hardware.power@1.3-impl-mediatek/lib/hw/android.hardware.power@1.3-impl-mediatek.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/android.hardware.power@1.3-impl-mediatek.so

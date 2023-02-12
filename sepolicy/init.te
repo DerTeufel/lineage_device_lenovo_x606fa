@@ -1,6 +1,7 @@
 # Allow init to mount vendor configs
 allow init vendor_configs_file:file mounton;
 allow init vendor_overlay_file:file mounton;
+allow init vendor_file:file mounton;
 
 allow init {
     sysfs_touchscreen
